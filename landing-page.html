@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>landing page</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                outline: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            body {
+                width: 100%;
+                background: lightseagreen;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .header{
+                width: 100%;
+                background: rgba(255, 255, 255, 0.5);
+                padding: 10px 20px;
+            }
+            .header h1 {
+                text-align: center;
+                font-size: 30px;
+                color: red;
+                font-weight: 800;
+                animation-name: header;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                position: relative;
+            }
+            @keyframes header {
+                0% {
+                    top: -50px;
+                }
+                100%{
+                    top: 0px;
+                }
+            }
+            .section1 {
+                padding: 5%;
+                max-width: 1000px;
+                margin: auto;
+                text-align: center;
+            }
+            .section1 h2.heading {
+                text-align: center;
+                padding: 5px 10px;
+                animation-name: heading;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+                position: relative; 
+            }
+            @keyframes heading {
+                0%{
+                    left: -200px;
+                }
+                100%{
+                    left: 0px;
+                }
+            }
+            .section1 p.paragraph { 
+                text-align: justify;
+                color: rgba(0, 0, 0, 0.7);
+                animation-name: section-paragraph;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+                right: -1000px;
+                position: relative;
+            }
+            @keyframes section-paragraph{
+                0% {
+                    right: -1000px;
+                }
+                100%{
+                    right: 0px;
+                }
+            }
+            .section1 button {
+                margin: 10px;
+                padding: 1rem 2rem;
+                border: 1px solid #fff;
+                background:rgba(255, 255, 255, 0.1);
+                color: white;
+                border-radius: 2px;
+                transition-property: transform;
+                transition-duration: 0.5s;
+                transition-timing-function: ease; 
+                animation-name: section1-button;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                animation-delay: 2s;
+                opacity: 0;
+                /* position: relative; */
+            } 
+            @keyframes section1-button {
+                0% {opacity: 0}
+                100% { opacity: 1;}
+            }
+            .section1 button:hover {
+                transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+           <h1>Landing Page</h1>
+        </div>
+        <div class="section1">
+            <h2 class="heading">services</h2>
+            <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <button>read more</button>
+        </div>
+    </body>
+</html>
